@@ -56,9 +56,3 @@ It captures the day, month, and year as separate groups, then rearranges them in
 ```python
 re.sub(date_pattern, r'\3-\2-\1', text)
 ```
-
-## Notes / Possible improvements
-
-- The script currently reads a hardcoded filename (`dates.txt`). You could extend it to accept a filepath as a command-line argument.
-- The regex assumes dates are strictly in `DD-MM-YYYY` format and doesn't validate real calendar dates (e.g., `99-99-9999` would still "convert").
-- Output is only printed to the console; it could be extended to write the converted text back to a file.
